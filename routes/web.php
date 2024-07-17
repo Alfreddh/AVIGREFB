@@ -88,3 +88,7 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('pages.laravel-examples.user-profile');
 	})->name('user-profile');
 });
+
+Route::get('site', function () {
+	return view('pages.site-index');
+})->name('site');
