@@ -90,7 +90,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h6 class="mb-0 ">Visites du site web</h6>
+                            <h6 class="mb-0 ">Archives</h6>
                             <p class="text-sm "></p>
                             <hr class="dark horizontal">
                             <div class="d-flex ">
@@ -263,9 +263,9 @@
                                         <i class="material-icons text-success text-gradient">notifications</i>
                                     </span>
                                     <div class="timeline-content">
-                                        <h6 class="text-dark text-sm font-weight-bold mb-0">$2400, Design changes
+                                        <h6 class="text-dark text-sm font-weight-bold mb-0">Une nouvelle demande de recrutement
                                         </h6>
-                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">22 DEC 7:20 PM
+                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">18 Juil 14h:30
                                         </p>
                                     </div>
                                 </div>
@@ -274,8 +274,8 @@
                                         <i class="material-icons text-danger text-gradient">code</i>
                                     </span>
                                     <div class="timeline-content">
-                                        <h6 class="text-dark text-sm font-weight-bold mb-0">New order #1832412</h6>
-                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 11 PM
+                                        <h6 class="text-dark text-sm font-weight-bold mb-0">Votre rapport a été validé</h6>
+                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0"> il y a 10h
                                         </p>
                                     </div>
                                 </div>
@@ -284,10 +284,10 @@
                                         <i class="material-icons text-info text-gradient">shopping_cart</i>
                                     </span>
                                     <div class="timeline-content">
-                                        <h6 class="text-dark text-sm font-weight-bold mb-0">Server payments for
-                                            April</h6>
-                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 9:34 PM
-                                        </p>
+                                        <h6 class="text-dark text-sm font-weight-bold mb-0">Votre projet a bien été créé</h6>
+                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
+                                                        il y a 8h
+                                    </p>
                                     </div>
                                 </div>
                                 <div class="timeline-block mb-3">
@@ -295,9 +295,8 @@
                                         <i class="material-icons text-warning text-gradient">credit_card</i>
                                     </span>
                                     <div class="timeline-content">
-                                        <h6 class="text-dark text-sm font-weight-bold mb-0">New card added for order
-                                            #4395133</h6>
-                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">20 DEC 2:20 AM
+                                        <h6 class="text-dark text-sm font-weight-bold mb-0">Vous venez de terminer une activité</h6>
+                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">il y a 7h
                                         </p>
                                     </div>
                                 </div>
@@ -306,9 +305,8 @@
                                         <i class="material-icons text-primary text-gradient">key</i>
                                     </span>
                                     <div class="timeline-content">
-                                        <h6 class="text-dark text-sm font-weight-bold mb-0">Unlock packages for
-                                            development</h6>
-                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">18 DEC 4:54 AM
+                                        <h6 class="text-dark text-sm font-weight-bold mb-0">Votre mot de passe a bien été mis à jour</h6>
+                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">il y 5h
                                         </p>
                                     </div>
                                 </div>
@@ -317,8 +315,8 @@
                                         <i class="material-icons text-dark text-gradient">payments</i>
                                     </span>
                                     <div class="timeline-content">
-                                        <h6 class="text-dark text-sm font-weight-bold mb-0">New order #9583120</h6>
-                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">17 DEC</p>
+                                        <h6 class="text-dark text-sm font-weight-bold mb-0">Vous avez reçu un nouveau don</h6>
+                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">il y a 10min</p>
                                     </div>
                                 </div>
                             </div>

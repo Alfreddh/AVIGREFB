@@ -67,8 +67,11 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::delete('/users/{id}', [UserControlleur::class, 'destroy'])->name('users.destroy');
 	//Route::get('projets/{id}', [ProjetController::class, 'show'])->name('projets.show');
 	Route::post('rapport', [RapportController::class, 'store'])->name('rapports.store');
-	Route::get('/archives', [ArchiveController::class, 'index'])->name('archives.index');
+	Route::get('archives', [ArchiveController::class, 'index'])->name('archives.index');
+	Route::post('archive', [ArchiveController::class, 'store'])->name('archives.store');
+	Route::post('/archives/{id}', [ArchiveController::class, 'update'])->name('archives.update');
 	Route::delete('/archives/{id}', [ArchiveController::class, 'delete'])->name('archives.delete');
+	Route::get('village', [ArchiveController::class, 'getVillagesByZone'])->name('getvillages');
 	Route::get('rtl', function () {
 		return view('pages.rtl');
 	})->name('rtl');

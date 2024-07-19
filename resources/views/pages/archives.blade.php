@@ -13,28 +13,27 @@
                                     <h6 class="text-white text-capitalize ps-3">Archives</h6>
                                 </div>
                             </div>
+                            <div class=" me-3 my-3 text-end">
+                            <a class="btn bg-gradient-dark mb-0" data-toggle="modal" data-target="#ArchiveCreate"><i
+                                    class="material-icons text-sm">add</i>&nbsp;&nbsp;Nouveau</a>
+                        </div>
                             <div class="card-body px-0 pb-2">
                                 <div class="table-responsive p-0">
-                                    @if($projets->isEmpty())
-                                    <div class="d-flex justify-content-center align-items-center" style="height: 55vh;">
-                                        <p>Aucun projet terminé pour le moment.</p>
-                                    </div>
-                                    @else
                                     <table class="table align-items-center justify-content-center mb-0">
                                         <thead>
                                             <tr>
                                                 <th
                                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                    Projet</th>
+                                                    Nom de l'archive</th>
                                                 <th
                                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                                    Budget</th>
+                                                    Description</th>
                                                 <th
                                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                                    Partenaires</th>
+                                                    Date d'ajout</th>
                                                 <th
-                                                    class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">
-                                                    Date de fin</th>
+                                                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                                     Rapport</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
@@ -81,9 +80,6 @@
                                                     @endif
                                                 </div>
                                                 </td>
-                                                <td class="align-middle text-center">
-                                                    <p class="text-sm font-weight-bold mb-0">{{ $projet->datefin }}</p>
-                                                </td>
                                                 <td class="align-middle">
                                                 <a rel="tooltip" class="btn btn-success btn-link"
                                                     href="" data-original-title=""
@@ -101,7 +97,46 @@
                                             </tr>
                                         @endforeach
                                         @endforeach
-                                        @endif
+                                        @foreach($archives as $archive)
+                                        <tr>
+                                                <td>
+                                                    <div class="d-flex px-2">
+                                                        <img src="https://via.placeholder.com/2" class="avatar avatar-sm rounded-circle me-2" alt="Image non disponible">
+                                                        <div class="my-auto">
+                                                            <h6 class="mb-0 text-sm">{{ $archive->nom }}</h6>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="text-sm font-weight-bold mb-0">{{ $archive->description }}</p>
+                                                </td>
+                                                <td>
+                                                <p class="text-sm font-weight-bold mb-0">{{ $archive->created_at }}</p>
+                                                </td>
+                                                <td>
+                                                    @if($archive->rapport_path)
+                                                        <p class="text-sm font-weight-bold mb-0"><a href="{{ Storage::url($archive->rapport_path) }}" target="_blank">Voir le rapport</a></p>
+                                                    @else
+                                                    <p class="text-sm font-weight-bold mb-0">Aucun rapport ajouté</p>
+                                                    @endif
+                                                </td>
+                                                <td class="align-left">
+                                                <a rel="tooltip" class="btn btn-success btn-link"
+                                                    href="" data-original-title=""
+                                                    title="">
+                                                    <i class="material-icons">edit</i>
+                                                    <div class="ripple-container"></div>
+                                                </a>
+                                                
+                                                <button type="button" class="btn btn-danger btn-link"
+                                                data-original-title="" title="">
+                                                <i class="material-icons">close</i>
+                                                <div class="ripple-container"></div>
+                                            </button>
+                                            </td>
+                                            </tr>
+                                        
+                                        @endforeach
                                         </tbody>
                                     </table>
                                 </div>
@@ -113,5 +148,5 @@
             </div>
         </main>
         <x-plugins></x-plugins>
-    
+        @include('pages.modal.create-archive');                                              
 </x-layout>
